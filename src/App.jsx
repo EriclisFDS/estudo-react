@@ -13,6 +13,9 @@ import ListaAlunos from "./components/repetiçao/ListaAlunos";
 import TabelaProdutos from "./components/repetiçao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicação/DiretaPai";
+import IndiretaPai from "./components/comunicação/IndiretaPai";
+import Input from "./components/fomulario/Input";
 
 export default function App(props) {
     return (
@@ -55,7 +58,15 @@ export default function App(props) {
                     <UsuarioInfo usuario={{ nome:"Fernando" }} />
                     <UsuarioInfo usuario={{ email:"Fernando@hotmail.com" }} />
                 </Card>
-                
+                <Card titulo="#9 - Comunicação Direta" color="#59323C">
+                    <DiretaPai></DiretaPai>
+                </Card>
+                <Card titulo="#10 - Comunicação Indireta" color="#59323C">
+                    <IndiretaPai></IndiretaPai>
+                </Card>
+                <Card titulo="#11 - Componente Controlado (Input)" color="#E45f56">
+                    <Input></Input>
+                </Card>
             </div>
         </div>
     );
