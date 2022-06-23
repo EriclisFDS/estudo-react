@@ -1,5 +1,7 @@
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
+
 import React from 'react';
+import { createRoot } from "react-dom/client";
 import './index.css';
 
 import App from './App';
@@ -23,7 +25,21 @@ import App from './App';
 //    document.getElementById('root')
 //);
 
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);
+
+//versao React 17
+// ReactDOM.render(
+//     <App />,
+//     document.getElementById('root')
+// );
+
+
+//versao react 18 com const
+// const container = document.getElementById('root');
+
+// const root = createRoot(container);
+
+// root.render(<App />);
+
+//versao react 18 direto
+createRoot(document.getElementById('root')).render(<App />);
+

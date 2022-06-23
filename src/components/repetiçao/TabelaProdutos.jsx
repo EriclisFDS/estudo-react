@@ -24,9 +24,11 @@ export default function TabelaProdutos(props){
         <div className="TabelaProdutos">
             <table border="1">
                 <thead>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Preço</th>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {produtosLi}

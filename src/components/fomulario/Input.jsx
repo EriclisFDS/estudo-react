@@ -17,6 +17,8 @@ export default function Input(props){
             <div style={{ display:"flex", flexDirection: "column"}}>
                 <input type="text" value={ valor } onChange={ quandoMudar } />
                 <input type="text" value={ valor } readOnly />
+                
+                {/* nao controlado */}
                 <input type="text" value={ undefined } />
             </div>
         </div>
